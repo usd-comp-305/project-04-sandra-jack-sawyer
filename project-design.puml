@@ -77,7 +77,7 @@ enum characterType {
 
 class Game {
     player: Character
-    setting: Battle
+    setting: Event
     team: List<alliedNPC>
     progress: int
 
