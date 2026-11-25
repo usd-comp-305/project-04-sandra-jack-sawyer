@@ -1,0 +1,119 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Character {
+    name: str
+    type: characterType
+    health: int
+    attackPower: int
+    defensePower: int
+    speed: int
+    equippedWeapon: Weapon
+    equippedArmor: Armor
+
+    takeDamage(): void
+    attack(): void
+    isAlive(): boolean
+    chooseAction(): Action
+}
+
+abstract class AllyCharacter extends Character {
+
+}
+
+abstract class EnemyCharacter extends Character {
+
+}
+
+class playableCharacter extends AllyCharacter {
+
+}
+
+class alliedNPC extends AllyCharacter {
+
+}
+
+class enemyNPC extends EnemyCharacter {
+
+}
+
+abstract class EventFactory {
+    createEvent(): Event
+}
+
+class BattleFactory extends EventFactory {
+
+}
+
+class EncounterFactory extends EventFactory {
+
+}
+
+abstract class Event {
+    eventName: str
+}
+
+class Battle extends Event {
+    allies: List<alliedNPC>
+    enemies: List<enemyNPC>
+}
+
+class Encounter extends Event{
+    location: str
+    items: List<Item>
+}
+
+enum characterType {
+    MAN
+    ELF
+    DWARF
+    HOBBIT
+    WIZARD
+    ORC
+    TROLL
+    DRAGON
+    NAZGUL
+}
+
+class Game {
+    player: Character
+    setting: Battle
+    team: List<alliedNPC>
+    progress: int
+
+    startGame(): void
+    updateProgress(): void
+    endGame(): void
+    selectCharacter(): Character
+}
+
+class Item {
+
+}
+
+class Weapon extends Item {
+    damage: int
+    attackSpeed: int
+}
+
+class Armor extends Item {
+    defense: int
+}
+
+class Action {
+
+}
+
+
+Game --> EventFactory
+Game --> Character
+
+Character --> characterType
+Character *-- Weapon
+Character *-- Armor
+Character --> Action
+
+BattleFactory --> Battle
+EncounterFactory --> Encounter
+
+@enduml
