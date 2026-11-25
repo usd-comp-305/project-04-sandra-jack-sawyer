@@ -17,23 +17,11 @@ abstract class Character {
     chooseAction(): Action
 }
 
-abstract class AllyCharacter extends Character {
+class NPC extends Character {
 
 }
 
-abstract class EnemyCharacter extends Character {
-
-}
-
-class playableCharacter extends AllyCharacter {
-
-}
-
-class alliedNPC extends AllyCharacter {
-
-}
-
-class enemyNPC extends EnemyCharacter {
+class PlayableCharacter extends Character {
 
 }
 
