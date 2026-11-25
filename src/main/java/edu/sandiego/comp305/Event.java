@@ -3,7 +3,7 @@ package edu.sandiego.comp305;
 public abstract class Event {
     private final EventType eventName;
 
-    public Event(EventType eventName) {
+    public Event(final EventType eventName) {
         this.eventName = eventName;
     }
 

@@ -4,8 +4,11 @@ import java.util.*;
 
 public final class Game {
     private int progress;
+
     private Character player;
+
     private Event setting;
+
     private List<AllyNPC> team;
 
     private Game() {
