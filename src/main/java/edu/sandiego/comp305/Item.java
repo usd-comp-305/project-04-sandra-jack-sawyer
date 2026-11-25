@@ -1,4 +1,9 @@
 package edu.sandiego.comp305;
 
-public class Item {
+public abstract class Item {
+    private final String name;
+
+    protected Item(String name) {
+        this.name = name;
+    }
 }
