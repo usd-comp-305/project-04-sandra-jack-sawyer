@@ -76,7 +76,15 @@ enum characterType {
 }
 
 class Game {
+    player: Character
+    setting: Event
+    team: List<alliedNPC>
     progress: int
+
+    startGame(): void
+    updateProgress(): void
+    endGame(): void
+    selectCharacter(): Character
 }
 
 class Item {

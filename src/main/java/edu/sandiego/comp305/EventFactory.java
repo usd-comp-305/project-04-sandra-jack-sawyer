@@ -1,4 +1,6 @@
 package edu.sandiego.comp305;
 
-public class EventFactory {
+public abstract class EventFactory {
+    public EventFactory() {
+    }
 }
