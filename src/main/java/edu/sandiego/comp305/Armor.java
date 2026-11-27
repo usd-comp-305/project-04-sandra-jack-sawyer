@@ -3,7 +3,7 @@ package edu.sandiego.comp305;
 public class Armor extends Item {
     private final int defense;
 
-    public Armor(String name, int defense) {
+    public Armor(final String name, final int defense) {
         super(name);
         this.defense = defense;
     }
@@ -12,12 +12,12 @@ public class Armor extends Item {
         return defense;
     }
 
-    public int calculateDamage(int rawDamage) {
+    public int calculateDamage(final int rawDamage) {
         return 0;
     }
 
     @Override
-    public void use(Character character) {
+    public void use(final Character character) {
 
     }
 }

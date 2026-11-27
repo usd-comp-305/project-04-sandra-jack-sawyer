@@ -3,7 +3,7 @@ package edu.sandiego.comp305;
 public class Weapon extends Item {
     private final int damage;
 
-    public Weapon(String name, int damage) {
+    public Weapon(final String name, final int damage) {
         super(name);
         this.damage = damage;
     }
@@ -13,7 +13,7 @@ public class Weapon extends Item {
     }
 
     @Override
-    public void use(Character character) {
+    public void use(final Character character) {
 
     }
 }

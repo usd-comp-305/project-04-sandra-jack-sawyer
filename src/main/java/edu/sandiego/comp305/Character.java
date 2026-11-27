@@ -2,13 +2,19 @@ package edu.sandiego.comp305;
 
 public abstract class Character {
     private final String name;
+
     private int health;
+
     private int maxHealth;
+
     private final int baseDamage;
+
     private Weapon equippedWeapon;
+
     private Armor equippedArmor;
 
-    public Character(String name, int maxHealth, int baseDamage, Weapon defaultWeapon, Armor defaultArmor) {
+    public Character(final String name, final int maxHealth, final int baseDamage,
+                     final Weapon defaultWeapon, final Armor defaultArmor) {
         this.name = name;
         this.maxHealth = maxHealth;
         this.health = maxHealth;
@@ -21,19 +27,19 @@ public abstract class Character {
         return false;
     }
 
-    public void modifyHealth(int changeInHealth) {
+    public void modifyHealth(final int changeInHealth) {
 
     }
 
-    public void takeDamage(int rawDamage) {
+    public void takeDamage(final int rawDamage) {
 
     }
 
-    public void equipWeapon(Weapon weapon) {
+    public void equipWeapon(final Weapon weapon) {
 
     }
 
-    public void equipArmor(Armor armor) {
+    public void equipArmor(final Armor armor) {
 
     }
 

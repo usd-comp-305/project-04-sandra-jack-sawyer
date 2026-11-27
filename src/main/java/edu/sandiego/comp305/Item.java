@@ -3,7 +3,7 @@ package edu.sandiego.comp305;
 public abstract class Item {
     private final String name;
 
-    public Item(String name) {
+    public Item(final String name) {
         this.name = name;
     }
 
