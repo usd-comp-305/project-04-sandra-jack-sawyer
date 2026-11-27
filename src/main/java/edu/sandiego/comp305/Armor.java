@@ -17,7 +17,7 @@ public class Armor extends Item {
     }
 
     @Override
-    public void use(final Character character) {
+    public void use(final PlayableCharacter character) {
 
     }
 }

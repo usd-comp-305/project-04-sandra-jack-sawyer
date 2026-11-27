@@ -24,7 +24,7 @@ public class Consumable extends Item {
     }
 
     @Override
-    public void use(final Character character) {
+    public void use(final PlayableCharacter character) {
 
     }
 }

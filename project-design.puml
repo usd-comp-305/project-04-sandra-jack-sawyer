@@ -29,14 +29,6 @@ abstract class EventFactory {
     createEvent(): Event
 }
 
-class BattleFactory extends EventFactory {
-
-}
-
-class EncounterFactory extends EventFactory {
-
-}
-
 abstract class Event {
     eventName: str
 }
@@ -75,17 +67,27 @@ class Game {
     selectCharacter(): Character
 }
 
-class Item {
+abstract class Item {
+    name: str
 
+    abstract use(): void
 }
 
 class Weapon extends Item {
     damage: int
-    attackSpeed: int
 }
 
 class Armor extends Item {
     defense: int
+
+    calculateDamage(): int
+}
+
+class Consumable extends Item {
+    healthRestore: int
+    usesRemaining: int
+
+    isDepleted(): bool
 }
 
 class Action {
@@ -101,7 +103,6 @@ Character *-- Weapon
 Character *-- Armor
 Character --> Action
 
-BattleFactory --> Battle
-EncounterFactory --> Encounter
+EventFactory --> Event
 
 @enduml
