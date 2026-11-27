@@ -14,6 +14,6 @@ public class Weapon extends Item {
 
     @Override
     public void use(final PlayableCharacter character) {
-        character.equipWeapon(this);
+        character.setEquippedWeapon(this);
     }
 }
