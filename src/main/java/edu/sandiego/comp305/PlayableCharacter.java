@@ -16,6 +16,10 @@ public class PlayableCharacter extends Character {
 
     }
 
+    public void removeItem(final Item item) {
+
+    }
+
     public boolean hasItem(final String itemName) {
         return false;
     }

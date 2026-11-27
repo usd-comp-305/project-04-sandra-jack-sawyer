@@ -11,5 +11,5 @@ public abstract class Item {
         return name;
     }
 
-    public abstract void use(Character character);
+    public abstract void use(final PlayableCharacter character);
 }

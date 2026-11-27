@@ -23,26 +23,53 @@ public abstract class Character {
         this.equippedArmor = defaultArmor;
     }
 
+    public abstract String getAction();
+
     public boolean isAlive() {
         return false;
     }
 
     public void modifyHealth(final int changeInHealth) {
-
+        health += changeInHealth;
     }
 
     public void takeDamage(final int rawDamage) {
 
     }
 
-    public void equipWeapon(final Weapon weapon) {
-
+    public String getName() {
+        return name;
     }
 
-    public void equipArmor(final Armor armor) {
-
+    public int getHealth() {
+        return health;
     }
 
-    public abstract String getAction();
+    public int getMaxHealth() {
+        return maxHealth;
+    }
 
+    public int getBaseDamage() {
+        return baseDamage;
+    }
+
+    public Weapon getEquippedWeapon() {
+        return equippedWeapon;
+    }
+
+    public Armor getEquippedArmor() {
+        return equippedArmor;
+    }
+
+    public void setHealth(final int health) {
+        this.health = health;
+    }
+
+    public void setEquippedWeapon(final Weapon equippedWeapon) {
+        this.equippedWeapon = equippedWeapon;
+    }
+
+    public void setEquippedArmor(final Armor equippedArmor) {
+        this.equippedArmor = equippedArmor;
+    }
 }
