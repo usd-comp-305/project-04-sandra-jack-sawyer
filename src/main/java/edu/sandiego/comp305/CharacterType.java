@@ -9,5 +9,13 @@ public enum CharacterType {
     ORC,
     TROLL,
     DRAGON,
-    NAZGUL
+    NAZGUL;
+
+    public boolean isAllyRace() {
+        return false;
+    }
+
+    public boolean isEnemyRace() {
+        return false;
+    }
 }
