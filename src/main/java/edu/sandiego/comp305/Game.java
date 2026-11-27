@@ -19,14 +19,27 @@ public final class Game {
     }
 
     public final Character selectCharacter(final Character character) {
-        return character;
+        player = character;
+        return player;
     }
 
     public final void startGame() {
-        return;
+        progress = 0;
+
+        //WIP: need to fix this
+        player = this.selectCharacter(this.player);
+    }
+
+    private final void reasonForGameEnd() {
+        //WIP: find a system to track progress and ensure that a game only ends if necessary
     }
 
     public final void endGame() {
-        return;
+        progress = 0;
+        player = null;
+        setting = null;
+        team = null;
+
+        System.out.println("GAME OVER");
     }
 }
