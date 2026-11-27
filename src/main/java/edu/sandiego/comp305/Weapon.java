@@ -1,5 +1,7 @@
 package edu.sandiego.comp305;
 
+// Sandra: implement Weapon (damage) per project-design.puml.
+
 public class Weapon extends Item {
     private final int damage;
 
