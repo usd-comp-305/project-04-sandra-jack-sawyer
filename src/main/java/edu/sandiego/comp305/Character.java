@@ -64,7 +64,7 @@ public abstract class Character {
     }
 
     public void equipArmor(final Armor armor) {
-
+        this.equippedArmor = armor;
     }
 
     public abstract String getAction();

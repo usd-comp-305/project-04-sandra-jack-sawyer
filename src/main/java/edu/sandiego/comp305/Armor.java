@@ -18,6 +18,6 @@ public class Armor extends Item {
 
     @Override
     public void use(final PlayableCharacter character) {
-
+        character.equipArmor(this);
     }
 }
