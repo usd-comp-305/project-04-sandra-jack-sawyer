@@ -60,7 +60,7 @@ public abstract class Character {
     }
 
     public void equipWeapon(final Weapon weapon) {
-
+        this.equippedWeapon = weapon;
     }
 
     public void equipArmor(final Armor armor) {
