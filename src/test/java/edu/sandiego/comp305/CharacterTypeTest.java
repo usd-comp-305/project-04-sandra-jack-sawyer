@@ -18,7 +18,6 @@ class CharacterTypeTest {
             CharacterType.WIZARD,
             CharacterType.ORC,
             CharacterType.TROLL,
-            CharacterType.DRAGON,
             CharacterType.NAZGUL
         };
         assertEquals(expected.length, CharacterType.values().length);
@@ -53,7 +52,6 @@ class CharacterTypeTest {
     void shadowForcesAreEnemies() {
         assertTrue(CharacterType.ORC.isEnemyRace());
         assertTrue(CharacterType.TROLL.isEnemyRace());
-        assertTrue(CharacterType.DRAGON.isEnemyRace());
         assertTrue(CharacterType.NAZGUL.isEnemyRace());
     }
 }
