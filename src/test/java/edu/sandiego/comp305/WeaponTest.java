@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class WeaponTest {
     private PlayableCharacter character;
+
     private Weapon weapon;
 
     @BeforeEach

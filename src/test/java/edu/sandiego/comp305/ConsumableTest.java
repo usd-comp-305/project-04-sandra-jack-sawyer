@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ConsumableTest {
     private PlayableCharacter character;
+
     private Consumable consumable;
 
     @BeforeEach
