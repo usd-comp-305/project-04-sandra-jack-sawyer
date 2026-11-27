@@ -13,6 +13,30 @@ public abstract class Character {
 
     private Armor equippedArmor;
 
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getMaxHealth() {
+        return maxHealth;
+    }
+
+    public int getBaseDamage() {
+        return baseDamage;
+    }
+
+    public Weapon getEquippedWeapon() {
+        return equippedWeapon;
+    }
+
+    public Armor getEquippedArmor() {
+        return equippedArmor;
+    }
+
     public Character(final String name, final int maxHealth, final int baseDamage,
                      final Weapon defaultWeapon, final Armor defaultArmor) {
         this.name = name;
