@@ -61,15 +61,15 @@ public abstract class Character {
         return equippedArmor;
     }
 
-    public void setHealth(int health) {
+    public void setHealth(final int health) {
         this.health = health;
     }
 
-    public void setEquippedWeapon(Weapon equippedWeapon) {
+    public void setEquippedWeapon(final Weapon equippedWeapon) {
         this.equippedWeapon = equippedWeapon;
     }
 
-    public void setEquippedArmor(Armor equippedArmor) {
+    public void setEquippedArmor(final Armor equippedArmor) {
         this.equippedArmor = equippedArmor;
     }
 }
