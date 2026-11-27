@@ -30,7 +30,7 @@ public abstract class Character {
     }
 
     public void modifyHealth(final int changeInHealth) {
-
+        health += changeInHealth;
     }
 
     public void takeDamage(final int rawDamage) {

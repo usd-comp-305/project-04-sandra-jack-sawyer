@@ -3,7 +3,7 @@ package edu.sandiego.comp305;
 public class Consumable extends Item {
     private final int healthRestore;
 
-    private final int usesRemaining;
+    private int usesRemaining;
 
     public Consumable(final String name, final int healthRestore, final int usesRemaining) {
         super(name);
@@ -25,6 +25,11 @@ public class Consumable extends Item {
 
     @Override
     public void use(final PlayableCharacter character) {
+        usesRemaining--;
+        character.modifyHealth(healthRestore);
 
+        if (isDepleted()) {
+            character.removeItem(this);
+        }
     }
 }
