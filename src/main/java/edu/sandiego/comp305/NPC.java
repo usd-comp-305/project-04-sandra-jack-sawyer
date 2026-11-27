@@ -2,17 +2,19 @@ package edu.sandiego.comp305;
 
 public class NPC extends Character {
 
-    public enum Allegiance {
+    public static enum Allegiance {
         ALLY,
         ENEMY,
         NEUTRAL
     }
 
     private final Allegiance allegiance;
+
     private final Item lootDrop;
 
-    public NPC(String name, int maxHealth, int baseDamage, Weapon defaultWeapon,
-               Armor defaultArmor, Allegiance allegiance, Item lootDrop) {
+    public NPC(final String name, final int maxHealth, final int baseDamage,
+               final Weapon defaultWeapon, final Armor defaultArmor,
+               final Allegiance allegiance, final Item lootDrop) {
         super(name, maxHealth, baseDamage, defaultWeapon, defaultArmor);
         this.allegiance = allegiance;
         this.lootDrop = lootDrop;

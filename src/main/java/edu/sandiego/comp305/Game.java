@@ -9,7 +9,7 @@ public final class Game {
 
     private Event setting;
 
-    private List<AllyNPC> team;
+    private List<NPC> team;
 
     private Game() {
     }
