@@ -20,7 +20,7 @@ public class Consumable extends Item {
     }
 
     public boolean isDepleted() {
-        return false;
+        return usesRemaining == 0;
     }
 
     @Override
