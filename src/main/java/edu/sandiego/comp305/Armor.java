@@ -1,5 +1,7 @@
 package edu.sandiego.comp305;
 
+// Sandra: implement Armor (defense) per project-design.puml.
+
 public class Armor extends Item {
     private final int defense;
 

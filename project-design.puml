@@ -59,7 +59,6 @@ enum characterType {
     WIZARD
     ORC
     TROLL
-    DRAGON
     NAZGUL
 }
 

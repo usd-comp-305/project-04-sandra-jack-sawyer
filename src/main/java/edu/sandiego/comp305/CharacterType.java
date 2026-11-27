@@ -8,6 +8,22 @@ public enum CharacterType {
     WIZARD,
     ORC,
     TROLL,
-    DRAGON,
-    NAZGUL
+    NAZGUL;
+
+    public boolean isAllyRace() {
+        switch (this) {
+            case MAN:
+            case ELF:
+            case DWARF:
+            case HOBBIT:
+            case WIZARD:
+                return true;
+            default:
+                return false;
+        }
+    }
+
+    public boolean isEnemyRace() {
+        return !isAllyRace();
+    }
 }
